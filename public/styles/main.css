@@ -1,0 +1,381 @@
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: url("../images/cellphone.jpg") no-repeat center fixed;
+    background-size: cover;
+  }
+  .principal {
+    display: block;
+  }
+  .news {
+    display: none;
+  }
+  .mainNav__links {
+    padding: 0.5%;
+  }
+  .mainNav {
+    margin-top: 0%;
+  }
+  .mainNav__mainMenu {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    float: none;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .mainNav__links {
+    color: aliceblue;
+    padding: 6px 60px;
+    text-decoration: none;
+    font-family: "Futura light";
+    font-size: 20px;
+    margin-top: 2%;
+  }
+  .mainNav__logo {
+    margin-top: 0;
+  }
+}
+
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url("../images/fondo.jpg");
+  background-size: cover;
+}
+
+body, html {
+  margin: 0;
+}
+
+h1 {
+  color: seashell;
+  font-family: "msyi";
+  font-size: 8vw;
+}
+
+h2 {
+  color: seashell;
+  font-family: "Futura light";
+  font-size: 3vw;
+}
+
+h3 {
+  font-family: "Futura medium condensed";
+  color: #FF4343;
+  font-size: 3vw;
+  padding-top: 10%;
+}
+
+h4 {
+  font-family: "trajan";
+  font-size: 4vw;
+  color: #D8CACA;
+}
+
+.vision {
+  font-family: "trajan";
+  font-size: 2vw;
+  color: #D8CACA;
+}
+
+p {
+  font-family: "Futura medium condensed";
+  color: white;
+  font-size: 3vw;
+}
+
+.btn {
+  color: white;
+  background-image: -webkit-gradient(linear, left top, right top, from(#F15A24), to(#F7931E));
+  background-image: linear-gradient(to right, #F15A24, #F7931E);
+  font-size: 2vw;
+  font-family: "Futura medium";
+  cursor: pointer;
+}
+
+.mainNav {
+  padding-top: 10%;
+}
+
+.mainNav__logo {
+  text-align: center;
+  padding: 20px;
+  margin-top: 0;
+}
+
+.mainNav__mainMenu {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mainNav__links {
+  color: aliceblue;
+  padding: 6px 60px;
+  text-decoration: none;
+  font-family: "Futura light";
+  font-size: 4vw;
+  margin-top: 1.5%;
+}
+
+.mainNav__links:hover {
+  border-style: ridge;
+  border-color: #D8CACA;
+}
+
+.mainNav__links:hover {
+  border-style: ridge;
+  border-color: #D8CACA;
+}
+
+.aboutUs {
+  text-align: center;
+  width: 100%;
+  padding-left: 20%;
+  padding-right: 20%;
+  margin-top: 30%;
+}
+
+.aboutUs__container {
+  margin: auto;
+  border-style: ridge;
+  padding: 5%;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.aboutUs__link {
+  color: white;
+  font-size: 1.5em;
+  font-family: "Futura medium condensed";
+}
+
+.news {
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+  padding: 15%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.news__content {
+  padding: 20px;
+}
+
+.news__container {
+  height: 700px;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.news__new1 {
+  width: 33.3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url("../images/new1.png");
+  background-size: cover;
+}
+
+.news__new2 {
+  width: 33.3%;
+}
+
+.news__new3 {
+  width: 33.3%;
+  background-color: #161616;
+}
+
+.new2__subnew1 {
+  height: 50%;
+  background-image: url("../images/new2.png");
+  background-size: cover;
+}
+
+.new2__subnew2 {
+  height: 50%;
+  background-image: url("../images/new3.png");
+  background-size: cover;
+}
+
+.new2 line {
+  stroke: #FF4343;
+  stroke-width: 2;
+}
+
+.newGame {
+  width: 100%;
+  padding-top: 5%;
+}
+
+.newGame__container {
+  text-align: center;
+  width: auto;
+  margin: auto;
+  padding-bottom: 8%;
+  padding-right: 20%;
+  padding-left: 20%;
+}
+
+.newGame__content {
+  font-family: "Futura light";
+  padding: 2%;
+}
+
+.newGame__link {
+  border-style: ridge;
+  text-decoration: none;
+  color: white;
+  font-family: "Futura medium";
+  font-size: 2vw;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.companyVision {
+  text-align: center;
+}
+
+.companyVision__container {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.companyVision__container__title1 {
+  height: 782px;
+  width: 33.3%;
+  padding-top: 15%;
+  background-image: url("../images/vision1.png");
+  text-align: center;
+}
+
+.companyVision__container__title2 {
+  position: relative;
+  margin-top: 2%;
+  height: 782px;
+  width: 33.3%;
+  background-image: url("../images/vision2.png");
+  text-align: center;
+  padding-top: 25%;
+}
+
+.companyVision__container__title3 {
+  background-image: url("../images/vision3.png");
+  height: 782px;
+  width: 33.3%;
+  text-align: center;
+  padding-top: 15%;
+}
+
+.gameSection__slider {
+  overflow: hidden;
+  text-align: center;
+  scroll-behavior: smooth;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (100%)[3];
+      grid-template-columns: repeat(3, 100%);
+  margin-top: 5%;
+}
+
+.gameSection__slider section {
+  position: relative;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  margin: 0%;
+}
+
+.gameSection__slider section .item {
+  padding: 50px 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.gameSection__slider section a {
+  position: absolute;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 10em;
+  padding-right: 4%;
+  width: 80px;
+  padding-top: 15%;
+  text-align: center;
+  z-index: 1;
+}
+
+.gameSection__slider section a:nth-of-type(1) {
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.gameSection__slider section a:nth-of-type(2) {
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+@font-face {
+  font-family: "Futura light";
+  src: url("../fonts/futura light bt.ttf");
+}
+
+@font-face {
+  font-family: "Futura medium";
+  src: url("../fonts/futura medium bt.ttf");
+}
+
+@font-face {
+  font-family: "Futura medium condensed";
+  src: url("../fonts/futura medium condensed bt.ttf");
+}
+
+@font-face {
+  font-family: "msyi";
+  src: url("../fonts/msyi.ttf");
+}
+
+@font-face {
+  font-family: "trajan";
+  src: url("../fonts/TrajanColor-Concept.otf");
+}
+/*# sourceMappingURL=main.css.map */

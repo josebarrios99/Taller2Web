@@ -1,0 +1,298 @@
+@media  only screen and (max-width: 600px) {
+    body{
+        background-image: url("../images/cellphone.jpg") no-repeat center fixed;
+        background-size: cover;
+    }
+    .principal{
+        display: block;
+    }
+    .news{
+        display: none;
+    }
+    .mainNav__links{
+        padding: 0.5%;
+    }
+    
+    .mainNav{
+        margin-top: 0%;
+        &__mainMenu{
+            justify-content: center;
+            display: flex;
+            float: none;
+            width: 100%;
+            flex-direction: column;
+            text-align: center;
+        }
+        &__links{
+            color: aliceblue;
+            padding: 6px 60px;
+            text-decoration: none;
+            font-family: "Futura light";
+            font-size: 20px;
+            margin-top: 2%;
+        }
+
+    }
+    .mainNav__logo{
+        margin-top: 0;
+    }
+    
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("../images/fondo.jpg");
+    background-size: cover;
+}
+body,html{
+    margin: 0;
+}
+h1{
+    color: seashell;
+    font-family: "msyi";
+    font-size: 8vw;
+}
+h2{
+    color: seashell;
+    font-family: "Futura light";
+    font-size: 3vw;
+}
+h3{
+    font-family: "Futura medium condensed";
+    color: #FF4343;
+    font-size: 3vw;
+    padding-top: 10%;
+}
+h4{
+    font-family: "trajan";
+    font-size: 4vw;
+    color: #D8CACA;
+}
+.vision{
+    font-family: "trajan";
+    font-size: 2vw;
+    color: #D8CACA;
+}
+p{
+    font-family: "Futura medium condensed";
+    color: white;
+    font-size: 3vw;
+}
+.btn{
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(to right, #F15A24 , #F7931E);
+    font-size: 2vw;
+    font-family: "Futura medium";
+    cursor: pointer;
+}
+
+//menu section
+.mainNav{
+    padding-top: 10%;
+    &__logo{
+        text-align: center;
+        padding: 20px;
+        margin-top: 0;
+    }
+
+    &__mainMenu{
+        justify-content: center;
+        display: flex;
+    }
+    &__links{
+        color: aliceblue;
+        padding: 6px 60px;
+        text-decoration: none;
+        font-family: "Futura light";
+        font-size: 4vw;
+        margin-top: 1.5%;
+    }
+    &__links:hover{
+        border-style: ridge;
+        border-color: #D8CACA;
+    }
+}
+
+.mainNav__links:hover{
+    border-style: ridge;
+    border-color: #D8CACA;
+}
+//about us section
+.aboutUs{
+    text-align: center;
+    width: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top: 30%;
+    &__container{
+        margin: auto;
+        border-style: ridge;
+        padding: 5%;
+        text-align: center;
+        justify-content: center;
+        width: auto;
+        display: flex;
+        flex-direction:  column;
+    }
+    &__link{
+        color: white;
+        font-size: 1.5em;
+        font-family: "Futura medium condensed";
+    }
+}
+//new section
+.news{
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+    padding: 15%;
+    flex-wrap: wrap;
+    &__content{
+        padding: 20px;
+    }
+    &__container{
+        height: 700px;
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__new1{
+        width: 33.3%;
+        display: flex;
+        background-image: url("../images/new1.png");
+        background-size: cover;
+    }
+    &__new2{
+
+        width: 33.3%;
+        
+    }
+    &__new3{
+
+        width: 33.3%;
+        background-color: #161616;
+        
+    }
+   
+}
+.new2{
+    &__subnew1{
+        height: 50%;
+        background-image: url("../images/new2.png");
+        background-size: cover;
+    }
+    &__subnew2{
+        height: 50%;
+        background-image: url("../images/new3.png");
+        background-size: cover;
+    }
+line{
+    stroke:#FF4343;;
+    stroke-width:2;
+}
+}
+.newGame{
+    width: 100%;
+    padding-top: 5%;
+    &__container{
+        text-align: center;
+        width: auto;
+        margin: auto;
+        padding-bottom: 8%;
+        padding-right: 20%;
+        padding-left: 20%;
+    }
+    &__content{
+        font-family: "Futura light";
+        padding: 2%;
+    }
+    &__link{
+        border-style: ridge;
+        text-decoration: none;
+        color: white;
+        font-family: "Futura medium";
+        font-size: 2vw;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+.companyVision{
+    text-align: center;
+    &__container{
+        height: auto;
+        display: flex;
+        
+        &__title1{
+            height: 782px;
+            width: 33.3%;
+            padding-top: 15%;
+            background-image: url("../images/vision1.png");
+            text-align: center;
+        }
+        &__title2{
+            position: relative;
+            margin-top: 2%;
+            height: 782px;
+            width: 33.3%;
+            background-image: url("../images/vision2.png");
+            text-align: center;
+            padding-top: 25%;
+        }
+        &__title3{
+            background-image: url("../images/vision3.png");
+            height: 782px;
+            width: 33.3%;
+            text-align: center;
+            padding-top: 15%;
+        }
+    }
+}
+.gameSection{
+    
+}
+.gameSection__slider{
+    overflow:hidden;
+    text-align: center;
+    scroll-behavior: smooth;
+    display: grid;
+    grid-template-columns: repeat(3,100%);
+    margin-top: 5%;
+    
+    section{
+        position: relative;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        margin: 0%;
+        
+        .item{
+          padding: 50px 2px;
+          display: flex;
+          flex-direction: column;
+        }
+        a{
+          position: absolute;
+          color: #ffffff;
+          text-decoration: none;
+          font-size: 10em;
+          padding-right: 4%;
+          width: 80px;
+          padding-top: 15%;
+          text-align: center;
+          z-index: 1;
+          &:nth-of-type(1){
+            top:0; bottom: 0; left: 0;
+            
+          }
+          &:nth-of-type(2){
+            top:0; bottom: 0; right: 0;
+                      }
+        }
+           
+    }
+  }
+
+@import 'fonts';
+
