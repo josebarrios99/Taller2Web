@@ -36,7 +36,6 @@
     .mainNav__logo{
         margin-top: 0;
     }
-    
 }
 *{
     margin: 0;
@@ -68,7 +67,7 @@ h3{
 h4{
     font-family: "trajan";
     font-size: 4vw;
-    color: #D8CACA;
+    color: rgba(255, 255, 0, 0.747);
 }
 .vision{
     font-family: "trajan";
@@ -293,6 +292,69 @@ line{
            
     }
   }
-
+  .gameSection{
+      text-align: center;
+      margin-top: 20%;
+      border-style: ridge;
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 8%;
+  }
+  .search_container{
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      padding-top: 5%;
+      
+  }
+  .search_box{
+      width: 70%;
+      position: relative;
+  }
+  .search_box input[type="text"]{
+    width: 100%;
+    position: relative;
+    padding: 2%;
+    padding-right: 60px;
+    box-sizing: border-box;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);  
+    -webkit-backdrop-filter: blur(10px);
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+.fa-search{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 65px;
+    color: white;
+    font-size: 25px;
+}
+.fa-shopping-cart{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 25px;
+    color: white;
+    font-size: 25px;
+}
+.product_container{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    border: 2px solid #ffffff;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);  
+    -webkit-backdrop-filter: blur(10px);
+    margin-top: 2%;
+    padding: 3%;
+    padding-bottom: 7%;
+    &__content{
+        display: flex;
+        flex-direction: row;
+    }
+}
 @import 'fonts';
 
