@@ -1,0 +1,26 @@
+<div class="checkout">
+    <h2 class="checkout__title">Buyer´s information</h2>
+    <form action="/checkout" method="POST" class="checkout_form">
+        <label>
+            <div class="data">
+                <h2 class="checkout__list"> Name </h2>
+                <h2 class="checkout__list"> I.D </h2>
+                <h2 class="checkout__list"> Phone </h2>
+                <h2 class="checkout__list"> Address </h2>
+            </div>
+            <div class="inputs">
+                <input class="checkout__input" placeholder="Name" name="Name" required="true">
+            <input class="checkout__input" placeholder="I.D Number" name="I.D" required="true">
+            <input class="checkout__input" placeholder="Phone" name="Phone" required="true">
+            <input class="checkout__input" placeholder="Address" name="Address" required="true">
+
+            </div>
+        </label>
+        <div>
+            <input name="products" type="hidden" class="checkoutform__products">
+            
+        </div>
+    </form>
+    
+</div>
+<button class="checkout__send"> Purchase </button>

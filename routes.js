@@ -56,6 +56,9 @@ function configureRoutes(app,db){
               res.render('product', context);
             });
           });
+          app.get('/checkout', function(req,res){
+            res.render('checkout');
+        });
       
 }
 
