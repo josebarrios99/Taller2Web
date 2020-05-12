@@ -24,9 +24,8 @@
     <div class="productList">
         {{#each products}}
         <div class="thumb">
-            <img class="thumb_img" src="{{ img }}" width="170px" height="240px">
+            <a href="/product/{{ title }}/{{ id }}">  <img class="thumb_img" src="{{ img }}" width="170px" height="240px"> </a>
             <button class="addProd"> {{price}} USD <i class="fas fa-shopping-cart"></i></button>
-            
         </div>
         {{/each}}
     </div>

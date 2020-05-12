@@ -1,7 +1,12 @@
 <div class="product_container">
-    <img src="{{img}}" width="403px" height="593px">
+        <img src="{{img}}" class="product__img">
     <div class="product_content">
+        
         <h4>{{title}}</h4>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum architecto voluptates illo ea debitis labore, minus nostrum, delectus doloribus accusamus minima, quidem tenetur ratione a. Voluptate quisquam sit perferendis. Nihil!</p>
+        <p class="product_content__text">{{description}}</p>
+        <h2>Age classification: PEGI {{age}}</h2>
+        <h2>Game genre: {{genre}}</h2>
+        <button class="addProd addProd--2">{{price}}USD <i class="fas fa-shopping-cart"></i> </button>
+        <h2>Get it now!</h2>
     </div>
 </div>
