@@ -311,6 +311,7 @@ line{
   .search_box{
       width: 70%;
       position: relative;
+      margin-bottom: 1%;
   }
   .search_box input[type="text"]{
     width: 100%;
@@ -355,6 +356,46 @@ line{
         display: flex;
         flex-direction: row;
     }
+
 }
+.category{
+    font-family: Oswald light;
+    font-size: 2.5vw;
+    text-align: left;
+}
+.filterMenu{
+    border: 2px solid #ffffff;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);  
+    -webkit-backdrop-filter: blur(10px);
+    width: 15%;
+    height: 800px;
+    margin-left: 15%;
+    
+    &__list{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        padding: 0;
+        list-style-type: none;
+        margin: 4%;
+        text-align: right;
+    }
+    &__item{
+        text-decoration: none;
+        padding: 10%;
+        border-style: none none solid none;
+        align-content: right;
+    }
+    &__link{
+        text-decoration: none;
+        font-family: Oswald regular;
+        font-size: 2vw;
+        color: rgb(255, 255, 255);
+    }
+    &__link:hover{
+        color: rgb(180, 180, 180);
+    }
+}
+
 @import 'fonts';
 

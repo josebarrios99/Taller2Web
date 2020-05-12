@@ -380,6 +380,7 @@ p {
 .search_box {
   width: 70%;
   position: relative;
+  margin-bottom: 1%;
 }
 
 .search_box input[type="text"] {
@@ -441,6 +442,50 @@ p {
           flex-direction: row;
 }
 
+.category {
+  font-family: Oswald light;
+  font-size: 2.5vw;
+  text-align: left;
+}
+
+.filterMenu {
+  border: 2px solid #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  width: 15%;
+  height: 800px;
+  margin-left: 15%;
+}
+
+.filterMenu__list {
+  color: white;
+  text-decoration: none;
+  padding: 0;
+  list-style-type: none;
+  margin: 4%;
+  text-align: right;
+}
+
+.filterMenu__item {
+  text-decoration: none;
+  padding: 10%;
+  border-style: none none solid none;
+  -ms-flex-line-pack: right;
+      align-content: right;
+}
+
+.filterMenu__link {
+  text-decoration: none;
+  font-family: Oswald regular;
+  font-size: 2vw;
+  color: white;
+}
+
+.filterMenu__link:hover {
+  color: #b4b4b4;
+}
+
 @font-face {
   font-family: "Futura light";
   src: url("../fonts/futura light bt.ttf");
@@ -464,5 +509,10 @@ p {
 @font-face {
   font-family: "trajan";
   src: url("../fonts/TrajanColor-Concept.otf");
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/OSWALD-VARIABLEFONT_WGHT.TTF");
 }
 /*# sourceMappingURL=main.css.map */
