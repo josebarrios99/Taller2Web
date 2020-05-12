@@ -403,7 +403,7 @@ p {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  right: 65px;
+  right: 85px;
   color: white;
   font-size: 2vw;
 }
@@ -416,6 +416,7 @@ p {
   right: 25px;
   color: white;
   font-size: 2vw;
+  cursor: pointer;
 }
 
 .fa-chevron-left {
@@ -544,6 +545,29 @@ label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.cartContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+  margin: auto;
+  border: 2px solid #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  margin-top: 0.5%;
+  padding: 3%;
+  padding-bottom: 0%;
+}
+
+.cart {
+  margin: auto;
 }
 
 .category {
