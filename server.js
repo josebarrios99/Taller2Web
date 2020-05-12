@@ -18,7 +18,10 @@ app.get('/home', function (request, response) {
   });
 
   app.get('/store', function (req, res) {
-    res.render('games');
+    var context={
+      products:products
+    }
+    res.render('games', context);
   });
   app.get('/product/:name/:id', function (req, res) {
     var context = {};

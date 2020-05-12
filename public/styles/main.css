@@ -444,8 +444,14 @@ p {
 
 .category {
   font-family: Oswald light;
-  font-size: 2.5vw;
+  font-size: 1.8vw;
   text-align: left;
+}
+
+.shopContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .filterMenu {
@@ -484,6 +490,47 @@ p {
 
 .filterMenu__link:hover {
   color: #b4b4b4;
+}
+
+.productList {
+  border: 2px solid #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  margin-left: 1%;
+  width: 54%;
+  height: 1900px;
+}
+
+.thumb__img {
+  position: relative;
+}
+
+.addProd {
+  background-color: #F15A24;
+  border-style: none;
+  position: absolute;
+  margin-left: -22.3%;
+  margin-top: 26.5%;
+  width: 22.3%;
+  text-align: center;
+  color: #ffffff;
+  font-family: Oswald regular;
+  font-size: 3vh;
+  cursor: pointer;
+}
+
+.productList {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 170px 170px 170px;
+      grid-template-columns: 170px 170px 170px;
+  -ms-grid-rows: 240px 240px 240px 240px 240px;
+      grid-template-rows: 240px 240px 240px 240px 240px;
+  grid-row-gap: 1%;
+  grid-column-gap: 4%;
+  text-align: center;
+  padding: 2% 0 2% 8%;
 }
 
 @font-face {
