@@ -23,7 +23,7 @@ app.use(express.urlencoded({ extended: true }));
 const url = 'mongodb://localhost:27017';
 
 // Database Name
-const dbName = 'store_switch';
+const dbName = 'games';
 
 // Create a new MongoClient
 const client = new MongoClient(url);

@@ -17,7 +17,7 @@ function configureRoutes(app,db){
             }
         }
         if(req.query.search){
-            filters.playerMode = {
+            filters.genre = {
                     $regex: new RegExp(req.query.search, 'i')
                 }
         }
@@ -33,15 +33,19 @@ function configureRoutes(app,db){
               });
         });
         app.get('/product/:name/:id', function (req, res) {
-          var context = {};
-          var foundElement =  products.find(function(elem){
-            if(elem.title == req.params.name){
-              return true;
-            }
+            const filter = {
+                _id: {
+                    $eq: new ObjectId(req.params.id)
+                }
+            };
+            const collection = db.collection('products');
+            // Find some documents
+            collection.find(filter).toArray(function(err, docs) {
+              assert.equal(err, null);
+              var context = docs[0]
+              res.render('product', context);
+            });
           });
-          context = foundElement;
-          res.render('product', context);
-        });
       
 }
 
