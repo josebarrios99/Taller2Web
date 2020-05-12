@@ -3,26 +3,26 @@
         <ul class="filterMenu__list">
             <div class="filterMenu__item">
                 <h2 class="category"> Price </h2>
-                <li> <a href="" class="filterMenu__link"> New releases </a> </li>
-                <li> <a href="" class="filterMenu__link"> Normal prices </a> </li>
-                <li> <a href="" class="filterMenu__link"> Sales </a> </li>
+                <li> <a href="/store/?price_gt=39" class="filterMenu__link"> New releases </a> </li>
+                <li> <a href="/store/?price_lt=59" class="filterMenu__link"> Normal prices </a> </li>
+                <li> <a href="/store/?price_lt=39" class="filterMenu__link"> Sales </a> </li>
             </div>
             <div class="filterMenu__item">
                 <h2 class="category">Genre</h2> 
-                <li> <a href="" class="filterMenu__link"> Open world </a> </li>
-                <li> <a href="" class="filterMenu__link"> RPG </a> </li>
-                <li> <a href="" class="filterMenu__link"> Souls </a> </li>
+                <li> <a href="/store/?search=open world" class="filterMenu__link"> Open world </a> </li>
+                <li> <a href="/store/?search=rpg" class="filterMenu__link"> RPG </a> </li>
+                <li> <a href="/store/?search=souls" class="filterMenu__link"> Souls </a> </li>
             </div>
             <div class="filterMenu__item">
                 <h2 class="category">Age classification</h2>
-                <li> <a href="" class="filterMenu__link"> PEGI 18 </a> </li>
-                <li> <a href="" class="filterMenu__link"> PEGI 16 </a> </li>
-                <li> <a href="" class="filterMenu__link"> PEGI 12 </a> </li>
+                <li> <a href="/store/?age_eq=18" class="filterMenu__link"> PEGI 18 </a> </li>
+                <li> <a href="/store/?age_eq=16" class="filterMenu__link"> PEGI 16 </a> </li>
+                <li> <a href="/store/?age_eq=12" class="filterMenu__link"> PEGI 12 </a> </li>
             </div>
         </ul>
     </div>
     <div class="productList">
-        {{#each products}}
+        {{#each list}}
         <div class="thumb">
             <a href="/product/{{ title }}/{{ id }}">  <img class="thumb_img" src="{{ img }}" width="170px" height="240px"> </a>
             <button class="addProd"> {{price}} USD <i class="fas fa-shopping-cart"></i></button>
