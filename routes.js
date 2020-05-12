@@ -59,6 +59,9 @@ function configureRoutes(app,db){
           app.get('/checkout', function(req,res){
             res.render('checkout');
         });
+          app.get('/cart', function(req,res){
+            res.render('cart');
+        });
       
 }
 

@@ -25,7 +25,11 @@
         {{#each list}}
         <div class="thumb">
             <a href="/product/{{ title }}/{{ _id }}">  <img class="thumb_img" src="{{ img }}" width="170px" height="240px"> </a>
-            <button class="addProd"> {{ price }} USD <i class="fas fa-shopping-cart"></i></button>
+            <button class="addProd" data-name="{{title}}"
+        data-price="{{price}}"
+        data-id="{{_id}}"
+        data-img="{{img}}"
+        > {{ price }} USD <i class="fas fa-shopping-cart"></i></button>
         </div>
         {{/each}}
     </div>

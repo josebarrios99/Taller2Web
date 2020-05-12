@@ -513,7 +513,10 @@ p {
 }
 
 .checkout__send {
-  background-color: #F15A24;
+  background: #dc5b24;
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, #dc5b24), color-stop(53%, #e2801e), color-stop(100%, #e2801e));
+  background: linear-gradient(45deg, #dc5b24 0%, #e2801e 53%, #e2801e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dc5b24', endColorstr='#e2801e', GradientType=1 );
   border-style: none;
   width: 70%;
   margin-left: 15%;
@@ -521,7 +524,7 @@ p {
   text-align: center;
   color: #ffffff;
   font-family: Oswald regular;
-  font-size: 5vh;
+  font-size: 4vh;
   cursor: pointer;
 }
 
@@ -608,7 +611,10 @@ label {
 }
 
 .addProd {
-  background-color: #F15A24;
+  background: #dc5b24;
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, #dc5b24), color-stop(53%, #e2801e), color-stop(100%, #e2801e));
+  background: linear-gradient(45deg, #dc5b24 0%, #e2801e 53%, #e2801e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dc5b24', endColorstr='#e2801e', GradientType=1 );
   border-style: none;
   position: absolute;
   margin-left: -22.3%;
