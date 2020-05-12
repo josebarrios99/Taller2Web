@@ -574,6 +574,12 @@ p {
   font-size: 2vw;
 }
 
+.product__img {
+  display: block;
+  max-width: 50%;
+  height: auto;
+}
+
 footer {
   width: 100%;
 }
