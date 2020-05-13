@@ -513,7 +513,7 @@ p {
   font-size: 1.5vw;
 }
 
-.checkout__send {
+.sendBtn {
   background: #dc5b24;
   background: -webkit-gradient(left bottom, right top, color-stop(0%, #dc5b24), color-stop(53%, #e2801e), color-stop(100%, #e2801e));
   background: linear-gradient(45deg, #dc5b24 0%, #e2801e 53%, #e2801e 100%);

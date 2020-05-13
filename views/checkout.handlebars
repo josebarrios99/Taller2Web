@@ -9,18 +9,22 @@
                 <h2 class="checkout__list"> Address </h2>
             </div>
             <div class="inputs">
-            <input class="checkout__input" placeholder="Name" name="Name" required="true">
-            <input class="checkout__input" placeholder="I.D Number" name="ID" type = "number" required="true">
-            <input class="checkout__input" placeholder="Phone" name="Phone" type = "number" required="true">
-            <input class="checkout__input" placeholder="Address" name="Address" required="true">
+                <label>
+                    <input class="checkout__input" placeholder="Name" name="name" required="true">
+                </label>
+            
+            <input class="checkout__input" placeholder="I.D Number" name="id" type = "number" required="true">
+            <input class="checkout__input" placeholder="Phone" name="phone" type = "number" required="true">
+            <input class="checkout__input" placeholder="Address" name="address" required="true">
 
             </div>
         </label>
         <div>
-            <input name="products" type="hidden" class="checkoutform__products">
+            
         </div>
     </form>
     
 </div>
-<button class="checkout__send"> Purchase </button>
+<input name="products" type="hidden" class="checkoutform__products">
+<button class="sendBtn"> Purchase </button>
 <script src="/scripts/checkout.js"></script>

@@ -5,7 +5,12 @@
         <p class="product_content__text">{{description}}</p>
         <h2>Age classification: PEGI {{age}}</h2>
         <h2>Game genre: {{genre}}</h2>
-        <button class="addProd addProd--2"><h2> {{price}}USD <i class="fas fa-shopping-cart"></i></h2> </button>
+        <button class="addProd addProd--2"
+        data-name="{{title}}"
+        data-price="{{price}}"
+        data-id="{{_id}}"
+        data-img="{{img}}">
+        <h2> {{price}}USD <i class="fas fa-shopping-cart"></i></h2> </button>
         <h2>Get it now!</h2>
     </div>
 </div>

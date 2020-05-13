@@ -62,8 +62,9 @@ function configureRoutes(app,db){
     
             req.body.creation_date = new Date();
     
-            if(!req.body.products || !req.body.Name || !req.body.ID || !req.body.Phone || !req.body.Address){
-                res.redirect('/checkout');
+            if(!req.body.products || !req.body.name || !req.body.ID || !req.body.Phone || !req.body.Address){
+                res.redirect('/');
+
                 return;
             }
             req.body.products = JSON.parse(req.body.products)

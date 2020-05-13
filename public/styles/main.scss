@@ -411,25 +411,26 @@ line{
         font-family: "Oswald";
         font-size: 1.5vw;
     }
-    &__send{
-        background: rgba(220,91,36,1);
-        background: -moz-linear-gradient(45deg, rgba(220,91,36,1) 0%, rgba(226,128,30,1) 53%, rgba(226,128,30,1) 100%);
-        background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(220,91,36,1)), color-stop(53%, rgba(226,128,30,1)), color-stop(100%, rgba(226,128,30,1)));
-        background: -webkit-linear-gradient(45deg, rgba(220,91,36,1) 0%, rgba(226,128,30,1) 53%, rgba(226,128,30,1) 100%);
-        background: -o-linear-gradient(45deg, rgba(220,91,36,1) 0%, rgba(226,128,30,1) 53%, rgba(226,128,30,1) 100%);
-        background: -ms-linear-gradient(45deg, rgba(220,91,36,1) 0%, rgba(226,128,30,1) 53%, rgba(226,128,30,1) 100%);
-        background: linear-gradient(45deg, rgba(220,91,36,1) 0%, rgba(226,128,30,1) 53%, rgba(226,128,30,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dc5b24', endColorstr='#e2801e', GradientType=1 );
-        border-style: none;
-        width: 70%;
-        margin-left: 15%;
-        padding: 0.5%;
-        text-align: center;
-        color: #ffffff;
-        font-family: Oswald regular;
-        font-size: 4vh;
-        cursor: pointer;
-    }
+    
+}
+.sendBtn{
+    background: rgba(220,91,36,1);
+    background: -moz-linear-gradient(45deg, rgba(220,91,36,1) 0%, rgba(226,128,30,1) 53%, rgba(226,128,30,1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(220,91,36,1)), color-stop(53%, rgba(226,128,30,1)), color-stop(100%, rgba(226,128,30,1)));
+    background: -webkit-linear-gradient(45deg, rgba(220,91,36,1) 0%, rgba(226,128,30,1) 53%, rgba(226,128,30,1) 100%);
+    background: -o-linear-gradient(45deg, rgba(220,91,36,1) 0%, rgba(226,128,30,1) 53%, rgba(226,128,30,1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(220,91,36,1) 0%, rgba(226,128,30,1) 53%, rgba(226,128,30,1) 100%);
+    background: linear-gradient(45deg, rgba(220,91,36,1) 0%, rgba(226,128,30,1) 53%, rgba(226,128,30,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dc5b24', endColorstr='#e2801e', GradientType=1 );
+    border-style: none;
+    width: 70%;
+    margin-left: 15%;
+    padding: 0.5%;
+    text-align: center;
+    color: #ffffff;
+    font-family: Oswald regular;
+    font-size: 4vh;
+    cursor: pointer;
 }
 .inputs{
     display: flex;
