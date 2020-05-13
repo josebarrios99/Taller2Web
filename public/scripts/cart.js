@@ -1,4 +1,4 @@
-var buttons = document.querySelectorAll('.addProd');
+
 
 var cart_button = document.querySelector('.fa-shopping-cart');
 
@@ -13,25 +13,32 @@ cart_button.innerText = cartList.length;
 function renderCart() {
     var total = 0;
     var cartContainer = document.querySelector('.cart_list');
+    console.log(cartContainer);
     cartContainer.innerHTML = "";
     cartList.forEach(function (obj, index) {
        var newItem = document.createElement('div');
        newItem.classList.add('cart__item');
-       newItem.innerHTML = `
-       <img src="${obj.img}"/>
+       newItem.innerHTML = `<div class="cart_item">
+       <img src="${obj.img}" class="item_img" width = "154px"
+       height = "218px" />
+       <div class = "cart_item2">
+
        <h2>` + obj.name + `</h2>
        
        <small><h2>${obj.price}USD</h2></small>
-       <button class="removeBtn"><h2>X</h2></button>
+       <button class="removeBtn"><h2>Remove</h2></button>
+       </div>
+       </div>
        `;
        var btn = newItem.querySelector('.removeBtn');
        btn.addEventListener('click', function () {
-            newItem.remove();
+           newItem.remove();
            cartList.splice(index, 1);
            cart_button.innerText = cartList.length;
            localStorage.setItem('cartList', JSON.stringify(cartList));
            renderCart();
         });
+        
        cartContainer.appendChild(newItem);
        total += parseInt(obj.price);
     });
@@ -39,24 +46,6 @@ function renderCart() {
     totalElem.innerText = total;
 }
 renderCart();
-//cart_button.addEventListener('click', renderCart);
-//renderCart();
+cart_button.addEventListener('click', renderCart);
 
-buttons.forEach(function(elem){
-    elem.addEventListener('click', function(){
-        var name = elem.getAttribute('data-name');
-        var price = elem.getAttribute('data-price');
-        var id = elem.getAttribute('data-id');
-        var img = elem.getAttribute('data-img');
 
-        cartList.push({
-            name: name,
-            price: price,
-            id: id,
-            img: img,
-        });
-        cart_button.innerText = cartList.length;
-        localStorage.setItem('cartList', JSON.stringify(cartList));
-        
-    });
-});

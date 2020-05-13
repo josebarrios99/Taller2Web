@@ -33,7 +33,6 @@ function configureRoutes(app,db){
         }
       
           const collection = db.collection('products');
-              // Find some documents
               collection.find(filters).toArray(function(err, docs) {
                 assert.equal(err, null);
                 var context = {
@@ -49,7 +48,6 @@ function configureRoutes(app,db){
                 }
             };
             const collection = db.collection('products');
-            // Find some documents
             collection.find(filter).toArray(function(err, docs) {
               assert.equal(err, null);
               var context = docs[0]
@@ -59,6 +57,21 @@ function configureRoutes(app,db){
           app.get('/checkout', function(req,res){
             res.render('checkout');
         });
+        app.post('/checkout', function(req,res){
+            console.log(req.body.name);
+    
+            req.body.creation_date = new Date();
+    
+            if(!req.body.products || !req.body.Name || !req.body.ID || !req.body.Phone || !req.body.Address){
+                res.redirect('/checkout');
+                return;
+            }
+            req.body.products = JSON.parse(req.body.products)
+    
+            const collection = db.collection('orders');
+            collection.insertOne(req.body);
+            res.redirect('/store');
+          });
           app.get('/cart', function(req,res){
             res.render('cart');
         });

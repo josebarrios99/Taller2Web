@@ -1,4 +1,4 @@
-var typeInput = document.querySelector('[name="name"]');
+var typeInput = document.querySelector('[name="Name"]');
 var buttons = document.querySelectorAll('.checkout__send');
 buttons.forEach(function (btn) {
     btn.addEventListener('click', function (ev) {

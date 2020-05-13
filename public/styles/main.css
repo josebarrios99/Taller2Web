@@ -631,7 +631,8 @@ label {
 }
 
 .thumb__img {
-  position: relative;
+  width: 100%;
+  height: auto;
 }
 
 .addProd {
@@ -642,7 +643,7 @@ label {
   border-style: none;
   position: absolute;
   margin-left: -22.3%;
-  margin-top: 26.5%;
+  margin-top: 28%;
   width: 22.3%;
   text-align: center;
   color: #ffffff;
@@ -685,6 +686,58 @@ label {
   height: auto;
 }
 
+.cart_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cart_item2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 5%;
+}
+
+.cart__item {
+  padding: 2%;
+}
+
+.removeBtn {
+  background: #dc5b24;
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, #dc5b24), color-stop(53%, #e2801e), color-stop(100%, #e2801e));
+  background: linear-gradient(45deg, #dc5b24 0%, #e2801e 53%, #e2801e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dc5b24', endColorstr='#e2801e', GradientType=1 );
+  border: none;
+  cursor: pointer;
+}
+
+.buyButton {
+  background: #dc5b24;
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, #dc5b24), color-stop(53%, #e2801e), color-stop(100%, #e2801e));
+  background: linear-gradient(45deg, #dc5b24 0%, #e2801e 53%, #e2801e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dc5b24', endColorstr='#e2801e', GradientType=1 );
+  border: none;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  font-family: Oswald regular;
+  font-size: 3vh;
+  cursor: pointer;
+}
+
+.item_img {
+  display: block;
+  max-width: 50%;
+  height: auto;
+}
+
 footer {
   width: 100%;
 }
@@ -707,6 +760,31 @@ footer {
 .footer__title {
   font-size: 2vw;
   padding: 2%;
+}
+
+@media screen and (max-width: 700px) {
+  .addProd {
+    margin-left: -40%;
+    margin-top: 45%;
+    width: 40%;
+    text-align: center;
+    color: #ffffff;
+    font-family: Oswald regular;
+    font-size: 3vh;
+    cursor: pointer;
+  }
+  .productList {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 80px 80px;
+        grid-template-columns: 80px 80px;
+    -ms-grid-rows: 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px;
+        grid-template-rows: 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px;
+    grid-row-gap: 1%;
+    grid-column-gap: 4%;
+    text-align: center;
+    padding: 2% 0 2% 4%;
+  }
 }
 
 @font-face {
